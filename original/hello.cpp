@@ -7,5 +7,5 @@ int main(void) {
   cout << "Hello, Jenkins\n";
 
   cout << "I have successfully built and run\n";
-  return 0
+  return 0;
 }
