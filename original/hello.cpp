@@ -1,11 +1,5 @@
-//File: hello.cpp
-#include <iostream>
-using namespace std;
+#include "hello.h"
 
-int main(void) {
-  cout << "Hello, World\n";
-  cout << "Hello, Jenkins\n";
-
-  cout << "I have successfully built and run\n";
-  return 0;
+int add(int a, int b) {
+  return a+b;
 }
