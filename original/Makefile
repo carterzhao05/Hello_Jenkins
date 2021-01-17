@@ -1,4 +1,4 @@
-main: hello_exec hello_test hello_fuzz
+main: hello_exec  hello_fuzz
 	
 hello_exec: main.cpp hello.cpp 
 	g++ main.cpp hello.cpp -o hello_exec
