@@ -11,4 +11,5 @@ llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget} > coverage
 llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget} > ./${fullPathTarget}.json
 llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget}
 llvm-cov report --format=text ./hello_fuzz --instr-profile hello_fuzz.profdata
+exit 1
 
