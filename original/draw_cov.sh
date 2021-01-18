@@ -1,4 +1,4 @@
-
+export PATH=/home/vagrant/Downloads/third_party/llvm-build/release+asserts/bin:$PATH
 fullPathTarget=hello_fuzz
 target=$(basename $fullPathTarget )
 mkdir -p cov_viz
