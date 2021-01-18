@@ -9,3 +9,4 @@ llvm-profdata merge -sparse  ${target}.profraw -o ${target}.profdata
 llvm-cov show --format=html --output-dir=.  ./${fullPathTarget} -instr-profile=${target}.profdata
 llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget}
 llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget} > coverage.json
+llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget} > ./${fullPathTarget}.json
