@@ -10,7 +10,7 @@
 TEST(test, add) {
 
     // Google Test will also provide macros for assertions.
-    ASSERT_EQ( add(1, 3), 4);
+    ASSERT_EQ( add(1, 3), 5);
 }
 
 // Google Test can be run manually from the main() function
