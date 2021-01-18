@@ -6,7 +6,7 @@ mkdir -p cov_viz
 mkdir -p corpus/${target}_corpus/ corpus/${target}_seeds/
 LLVM_PROFILE_FILE="${target}.profraw"  ./${fullPathTarget}  corpus/${target}_corpus/ corpus/${target}_seeds/  -max_total_time=10
 llvm-profdata merge -sparse  ${target}.profraw -o ${target}.profdata
-llvm-cov show --format=html --output-dir=.  ./${fullPathTarget} -instr-profile=${target}.profdata
+llvm-cov show --format=html --output-dir=./out  ./${fullPathTarget} -instr-profile=${target}.profdata
 llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget} > coverage.json
 llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget} > ./${fullPathTarget}.json
 llvm-cov export -instr-profile ${target}.profdata ./${fullPathTarget}

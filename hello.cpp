@@ -1,7 +1,8 @@
 #include "hello.h"
 
 int add(int a, int b) {
-  if(0) {
+
+  if( a > 5 ) {
     return -1;
   }
   return a+b;
