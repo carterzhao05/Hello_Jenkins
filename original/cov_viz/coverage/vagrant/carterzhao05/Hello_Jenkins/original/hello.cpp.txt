@@ -1,9 +1,0 @@
-[0;36mCoverage Report
-[0m[0;36mCreated: 2021-01-17 11:57
-[0m[0;36m/vagrant/carterzhao05/Hello_Jenkins/original/hello.cpp:
-[0m    1|       |#include "hello.h"
-    2|       |
-    3|  41.8M|int add(int a, int b) {
-    4|  41.8M|  return a+b;
-    5|  41.8M|}
-
